@@ -398,6 +398,8 @@ app.use('/user', userRoutes)
 app.use('/logs', logsRoutes)
 app.use('/dash', dashRoutes)
 
+app.get('/', (res, req)=>res.send("Hello API"))
+
 server.listen(PORT, () => {
   console.log('server running at http://localhost:' + PORT);
 });
