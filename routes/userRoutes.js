@@ -3,7 +3,9 @@ const router = express.Router();
 
 const UserController = require('../controllers/UserController');
 
-router.get('/', (req, res) => req.send('hello World !'))
+router.get('/', (req, res) => {
+    res.send('Hello World !!')
+})
 router.post('/', (req, res) => UserController.annees(req, res))
 router.post('/auth', (req, res) => UserController.authentication(req, res))
 
