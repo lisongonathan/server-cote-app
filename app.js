@@ -7,7 +7,7 @@ const { join } = require('node:path');
 const { Server} = require('socket.io');
 
 
-const PORT = process.env.PORT ? process.env.PORT : 3000
+const PORT = process.env.PORT || 3000
 
 //API-REALSTREAM
 const server = createServer(app);
